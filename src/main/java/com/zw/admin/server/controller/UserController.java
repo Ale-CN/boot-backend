@@ -72,7 +72,7 @@ public class UserController {
 
 	@LogAnnotation
 	@PutMapping(params = "headImgUrl")
-	@ApiOperation(value = "修改头像")
+	@ApiOperation(value = "修改用户头像")
 	public void updateHeadImgUrl(String headImgUrl) {
 		User user = UserUtil.getCurrentUser();
 		UserDto userDto = new UserDto();
