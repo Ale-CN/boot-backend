@@ -1,8 +1,8 @@
 package com.zw.admin.server.config;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
+import com.zw.admin.server.constants.UserConstants;
+import com.zw.admin.server.filter.LogoutFilter;
+import com.zw.admin.server.filter.RestfulFilter;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.mgt.SecurityManager;
@@ -15,14 +15,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
-import com.zw.admin.server.constants.UserConstants;
-import com.zw.admin.server.filter.LogoutFilter;
-import com.zw.admin.server.filter.RestfulFilter;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * shiro配置
  * 
- * @author 小威老师 xiaoweijiagou@163.com
+ * @
  *
  */
 @Configuration
